@@ -6,7 +6,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 ## Install necessary packages
 ```
-sudo apt install zsh build-essential
+sudo apt install zsh build-essential -y
 ```
 ## Install oh-my-zsh
 ```
