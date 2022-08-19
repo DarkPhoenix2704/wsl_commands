@@ -23,11 +23,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 ## Install ZSH Plugins
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 ## Activate Plugins by adding the line in .zshrc
 ```
 plugins=( git zsh-syntax-highlighting zsh-autosuggestions )
+```
+## Configure Git
+```
+git config --global user.name "DarkPhoenix2704"
+git config --global user.email "anbarasun123@gmail.com"
 ```
