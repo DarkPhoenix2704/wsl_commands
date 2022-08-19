@@ -34,3 +34,26 @@ plugins=( git zsh-syntax-highlighting zsh-autosuggestions )
 git config --global user.name "DarkPhoenix2704"
 git config --global user.email "anbarasun123@gmail.com"
 ```
+## Genarate SSH Key
+```
+mkdir ~/.ssh && cd ~/.ssh
+ssh-keygen -t ed25519 -C "anbarasun123@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+```
+Add it in your github
+
+## GPG Signing 
+```
+gpg --default-new-key-algo rsa4096 --gen-key
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export *****************
+git config --global user.signingkey 
+```
+Add it to Github
+## Put in top of .zshrc
+```
+export GPG_TTY=$(tty)
+```
