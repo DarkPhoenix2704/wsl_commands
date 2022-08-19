@@ -57,3 +57,7 @@ Add it to Github
 ```
 export GPG_TTY=$(tty)
 ```
+## Install NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
